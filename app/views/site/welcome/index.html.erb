@@ -1,0 +1,8 @@
+<h1>Site::Welcome#index</h1>
+<p>Find me in app/views/site/welcome/index.html.erb</p>
+<p>teste</p>
+<% if admin_signed_in? %>
+  <p>Administrador esta LOGADO / <%= current_admin.email %> </P>
+  <p><%= link_to 'Efetuar logoff…[Admin]', destroy_admin_session_path, method: :delete %></P>
+<% end %>
+

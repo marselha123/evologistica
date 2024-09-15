@@ -1,0 +1,14 @@
+{
+  "name": "evo_retaguarda",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.6.0",
+    "bootstrap-growl-ifightcrime": "^1.1.0",
+    "fontawesome-free": "^1.0.4",
+    "jquery": "3.6.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jackson Pires <jack@jack.com>",
+  "license": "MIT"
+}

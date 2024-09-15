@@ -1,0 +1,45 @@
+<style>
+<h3> {
+       color: red;
+}
+</style>
+
+<h3>Ordem de Produção</h3>
+
+<div class="card-body" style="background-color: White">
+
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr bgcolor="black">
+          <th>Cód.OP</th>
+          <th>ST</th>
+          <th>Pedido Evo/Pieta</th>
+          <th>Nome Integrador/Cliente</th>
+          <th>Numero Série</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @producaos.each do |producao| %>
+          <tr>
+            <td><%= producao.opr_codigo %>-<%= producao.opr_subcodigo %></td>
+            <td><%= producao.opr_situacao %></td>
+            <td><%= producao.prp_codigo %></td>
+            <td><%= producao.opr_descricao %></td>
+            <td><%= producao.opr_numeroserie %></td>
+            <td><a href="show/<%= producao.id %>"><i title="Visualizar" class="fas fa-eye"></i></a>
+              <% if producao.opr_situacao=='OK' %>
+                <i class="fas fa-flag-checkered"></i>
+              <% end %>
+            </td>
+          
+          </tr>
+      
+        <% end %>
+      </tbody>
+    </table>
+
+    <%= paginate @producaos %>
+  </div>
+</div>
