@@ -5,14 +5,14 @@ namespace :dev do
         show_spinner("Apagando BD...") { %x(rails db:drop) }
         show_spinner("Criando BD...") { %x(rails db:create) }
         show_spinner("Migrando BD...") { %x(rails db:migrate) }
-
+      end  
         show_spinner("Criando o Administrador padrão...") { %x(rails dev:add_default_admin) }
         show_spinner("Adicionando ordem de producao...") { %x(rails dev:add_producoes) }
         show_spinner("Adicionando itens da ordem de producao...") { %x(rails dev:add_producao_items) }
         
-      else
-        puts "Você não está em ambiente de desenvolvimento!"
-      end
+#      else
+#        puts "Você não está em ambiente de desenvolvimento!"
+#      end
     end
 
   desc "Adiciona o administrador padrão"
