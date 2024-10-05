@@ -60,10 +60,12 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'faker'
   gem 'awesome_print'
+  gem "capistrano3-unicorn"
 end
 
 group :production do 
   gem 'mysql2' , '~> 0.4.10' 
+  gem "unicorn"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
