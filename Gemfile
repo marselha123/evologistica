@@ -63,7 +63,7 @@ group :development do
 end
 
 group :production do 
-  gem 'mysql2' , '~> 0.3.21' 
+  gem 'mysql2' , '~> 0.4.10' 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
