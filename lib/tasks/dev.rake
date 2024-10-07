@@ -36,6 +36,7 @@ namespace :dev do
          opr_situacao: 'EP',
          opr_descricao: Faker::Name.name,
          opr_numeroserie: '1234567890098',
+         opr_numeropedidocliente: '123456',
          opr_tipofrete: 'CIF',
          opr_estado: Faker::Address.state_abbr,
          opr_cidade: Faker::Address.city,
