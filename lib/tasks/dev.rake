@@ -54,9 +54,11 @@ namespace :dev do
             opr_codigo: producao.opr_codigo,
             opr_subcodigo: 1,
             opi_item: i,
-            opi_descricao: Faker::Commerce.product_name,
+            pro_codigo: i,
             opi_referencia: Faker::Commerce.promotion_code(digits: 2),
-            opi_quantidade: i
+            opi_descricao: Faker::Commerce.product_name,
+            opi_quantidade: i,
+            opi_qtdeseparado: 0
            )
          end     
        end  
