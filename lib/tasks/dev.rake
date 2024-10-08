@@ -40,7 +40,9 @@ namespace :dev do
          opr_tipofrete: 'CIF',
          opr_estado: Faker::Address.state_abbr,
          opr_cidade: Faker::Address.city,
-         opr_liberadoem: Date.today
+         opr_liberadoem: Date.today,
+         created_at: Date.today,
+         updated_at: Date.today
        )
      end
     end
@@ -58,7 +60,9 @@ namespace :dev do
             opi_referencia: Faker::Commerce.promotion_code(digits: 2),
             opi_descricao: Faker::Commerce.product_name,
             opi_quantidade: i,
-            opi_qtdeseparado: 0
+            opi_qtdeseparado: 0,
+            created_at: Date.today,
+            updated_at: Date.today
            )
          end     
        end  
